@@ -6,12 +6,16 @@ import (
 	"rsc.io/quote"
 )
 
+const pi float32 = 3.14
+
 func main() {
 	fmt.Println("Hola Mundo")
 	fmt.Println(quote.Go())
 
-	var firstName, lastName string
-	var age int
+	var (
+		firstName, lastName string
+		age                 int
+	)
 
 	firstName = "Franco"
 	lastName = "Maioli"
