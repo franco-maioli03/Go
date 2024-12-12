@@ -12,8 +12,6 @@ func PrintList(list ...any) {
 	}
 }
 
-type integer int
-
 type Numbers interface {
 	~int | ~float64 | ~float32 | ~uint
 }
