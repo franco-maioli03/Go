@@ -1,9 +1,24 @@
 {{ template "base" . }}
 
-{{ define "title" }} RPS web - Nuevo Juego {{ end }}
+{{ define "title" }} RPS web - New Game {{ end }}
 
 {{ define "content" }} 
 
-<h1>Pagina de nuevo Juego</h1>
+<section>
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center py-4">Enter your Name</h2>
+
+            <form action="/game" method="post">
+                <div class="mb-3">
+                    <input type="text" required placeholder="Enter your Name" name="name" id="name" class="form-control">
+                </div>
+                <div class="d-grid gap-2 py-4">
+                    <button type="submit" class="btn btn-success brn-lg">Start to play</button>
+                </div> 
+            </form>
+        </div>
+    </div>
+</section>
 
 {{ end }}

@@ -1,11 +1,11 @@
 {{ template "base" . }}
 
-{{ define "title" }} RPS web - Inicio {{ end }}
+{{ define "title" }} RPS web - Home {{ end }}
 
 {{ define "content" }} 
 
 <section class="container py-5">
-    <h1 class="display-4 fw-bold py-3 text-center">Bienvenido a Piedra, Papel o Tijera</h1>
+    <h1 class="display-4 fw-bold py-3 text-center">Welcome to Rock, Paper, Scissors</h1>
     <div class="row">
         <div class="col-md-4">
             <img src="static/img/img/rock_icon.png" alt="rock_icon" class="img-fluid">
@@ -17,18 +17,18 @@
             <img src="static/img/img/scissors_icon.png" alt="scissors_icon" class="img-fluid">
         </div>
     </div>
-    <p class="lead text-center fs-2 py-4">Juega con la computadora</p>
+    <p class="lead text-center fs-2 py-4">Play against the computer</p>
     <p class="text-center">
-        <a href="/new" class="btn btn-success btn-lg">Nuevo Juego</a>
+        <a href="/new" class="btn btn-success btn-lg">New Game</a>
     </p>
 </section>
 
 <section class="container py-5">
-    <h2 class="mb-4">¿Como se juega?</h2>
+    <h2 class="mb-4">How to play?</h2>
     <ol class="list-group list-group-numbered">
-        <li class="list-group-item">Crear un juego nuevo. </li>
-        <li class="list-group-item">Ingrese su nombre. </li>
-        <li class="list-group-item">Empiece a jugar. </li>
+        <li class="list-group-item">Start a new game.</li>
+        <li class="list-group-item">Enter your name.</li>
+        <li class="list-group-item">Begin playing.</li>
     </ol>
 </section>
 {{ end }}
